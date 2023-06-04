@@ -6,7 +6,9 @@ from django.test import SimpleTestCase
 
 from app import calc
 
+
 class CalcTests(SimpleTestCase):
+
     """
     Test the calc module.
     """
@@ -15,6 +17,7 @@ class CalcTests(SimpleTestCase):
         """
         Test adding numbers together.
         """
+
         res = calc.add(5, 6)
         self.assertEqual(res, 11)
 
@@ -22,5 +25,6 @@ class CalcTests(SimpleTestCase):
         """
         Test subtracking numbers.
         """
+
         res = calc.subtract(10, 15)
         self.assertEqual(res, 5)
