@@ -1,10 +1,6 @@
 [flake8]
-exclude = 
+exclude =
     migrations,
     __pycache__,
     manage.py,
     settings.py
-
-per-file-ignores =
-    /app/core/admin.py: F401,
-    /app/core/models.py: F401
