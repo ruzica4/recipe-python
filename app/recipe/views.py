@@ -63,7 +63,6 @@ class BaseRecipeAttrViewSet(mixins.DestroyModelMixin,
         return self.queryset.filter(user=self.request.user).order_by('-name')
 
 
-
 class TagViewSet(BaseRecipeAttrViewSet):
     """
     Manage tags in the database.
@@ -78,5 +77,3 @@ class IngredientViewSet(BaseRecipeAttrViewSet):
     """
     serializer_class = serializers.IngredientSerializer
     queryset = Ingredient.objects.all()
-
-
